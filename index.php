@@ -26,21 +26,20 @@ $test = 1;
   <section id="hero-1">
     <div class="container">
       ALUMNI AFPA
+      <p>En tant qu'Alumni AFPA, nous sommes une communauté unie d'individus talentueux qui ont partagé une expérience commune d'apprentissage au sein de cette institution.</p>
     </div>
   </section>
 
-  <section class="normal-scroll">
-    <div class="container">
-      Membres du groupe des anciens élèves
-    </div>
-  </section>
+  <div id="jonctionOne">
+    <h1>Groupe des anciens élèves</h1>
+  </div>
 
   <section id="hero-2">
-    <div class="container">
+    <div id="affichCard">
       <?php foreach ($data as $item) { ?>
 
         <div class="card-container row">
-          <div class="card">
+          <div class="card my-card">
             <img src="./assets/img/portrait-<?= $test ?>.jpg" alt="image membre du groupe">
             <h2><?= $item['name'] ?></h2>
             <p><strong>Téléphone:</strong> <?= $item['phone'] ?></p>
@@ -55,16 +54,14 @@ $test = 1;
 
 
 
-  <section class="normal-scroll">
-    <div class="container">
+ 
 
-  </section>
 
-  <section id="hero-3">
-    <div class="container">
-      Parallax section 5
-    </div>
-  </section>
+  <footer>
+    <?php 
+    include 'components/footer.php'
+    ?>
+  </footer>
 
 
 
